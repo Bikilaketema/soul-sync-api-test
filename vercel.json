@@ -12,5 +12,8 @@
       "dest": "dist/src/main.js",
       "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"]
     }
+  ],
+    "post-build": [
+    "npx prisma generate"
   ]
 }
