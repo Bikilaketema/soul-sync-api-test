@@ -1,0 +1,88 @@
+### Create a new channel(Negarit)
+POST http://localhost:3000/admin/channel
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4M2UyODI0ZS04MjllLTRiZjctYmM3Yi0xNTg3MjI0YTRjZjEiLCJlbWFpbCI6ImJpa2lsYWtldGVtYTk0QGdtYWlsLmNvbSIsImltYWdlVXJsIjpudWxsLCJhY2NvdW50cyI6W3siaWQiOiJkZWJkNDFlMC05NGIzLTQwMWYtOTcxNi0zOWEyNDVmNDA0YTUiLCJuYW1lIjoiQmlraWxhIn1dLCJyb2xlcyI6WyJPV05FUiJdLCJpYXQiOjE3MzQ2OTk2ODF9.HS845gZIOYnFX8kfxO7-b3hDwhEcSmp4M5mrv4RhK6k
+
+{
+"name": "Negarit",
+"metadata": "{\"hghgh\": \"DS Team\", \"Date\": \"Dec 17,2024\"}",
+"configuration": "{\"api\": \"test-api-key-aduekdi-emdhk\", \"Port\": \"4562\"}"
+}
+
+### Create a new channel(Telegram)
+POST http://localhost:3000/admin/channel
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3NTVlMjgxZi1iMDM3LTRkYjYtYjFhZi00ZTk5M2NkYTg3Y2UiLCJlbWFpbCI6ImJpa2lsYS5rZXRlbWEtdWdAYWF1LmVkdS5ldCIsImltYWdlVXJsIjpudWxsLCJhY2NvdW50cyI6W3siaWQiOiJmMjc0ZmI0YS1jMzk2LTQ2YTUtYThmYy1kMDAyZTczZDM5NmYiLCJuYW1lIjoiQmlraWxhIn1dLCJyb2xlcyI6WyJPV05FUiJdLCJpYXQiOjE3MzQ1MTAzNzZ9.ajrNO430NJ-cCnAgs2ebqJe-N_n4mykoCb-lgyfmT30
+
+{
+"name": "Telegram",
+"metadata": "{\"Host\": \"Telegram\", \"Date:\": \"Dec 17, 2024\"}",
+"configuration": "{\"bot-api-key\": \"dneudm-emefne-emein-enmded\", \"Port\": \"9848\"}",
+"isDeleted":false
+}
+
+### Create a new channel(Whatsapp)
+POST http://localhost:3000/admin/channel
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhODRiM2ZkMC0wMzc3LTQ3OTItYmRkNS1kZTAyZjc0OTI3NTQiLCJlbWFpbCI6ImJpa2lsYWtldGVtYTk0QGdtYWlsLmNvbSIsImltYWdlVXJsIjpudWxsLCJhY2NvdW50cyI6W10sInJvbGVzIjpbXSwiaWF0IjoxNzM0NDE3NzM2fQ.hiN-7Abb-KffKhDAFMD12ee6GxTQwF-G63imTZrncPw
+
+{
+"name": "Whatsapp",
+"metadata": "{\"Host\": \"Whatsapp\", \"Date:\": \"Dec 17, 2024\"}",
+"configuration": "{\"bot-api-key\": \"oedmhjed-mquqns-wmwdk\", \"Port\": \"44\"}",
+"isDeleted":false
+}
+
+### Get all channels
+GET http://localhost:3000/admin/channel
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4M2UyODI0ZS04MjllLTRiZjctYmM3Yi0xNTg3MjI0YTRjZjEiLCJlbWFpbCI6ImJpa2lsYWtldGVtYTk0QGdtYWlsLmNvbSIsImltYWdlVXJsIjpudWxsLCJhY2NvdW50cyI6W3siaWQiOiJkZWJkNDFlMC05NGIzLTQwMWYtOTcxNi0zOWEyNDVmNDA0YTUiLCJuYW1lIjoiQmlraWxhIn1dLCJyb2xlcyI6WyJPV05FUiJdLCJpYXQiOjE3MzQ2OTY2Nzh9.__-HQ8PoFKmCAKgvKYT7eaxwxo4vS6BpfxqecX_2UJA
+
+### Get a specific channel by ID
+GET http://localhost:3000/admin/channel/798b0e64-e8b0-4447-bc19-c395b91c32c6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFhYWNiMGEwLWViMWUtNGQxZi05MmQ2LWI1YWE1YTg0MGE2NSIsIm5hbWUiOiJ0ZXN0YmlraWxhIiwiZW1haWwiOiJiaWtpbGE5NEBiaWtpbGEuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkazNTWXdOcGxVZlJUNGdpb1hFRXhOLjA0Unkzd0V5bkRjcHFYQlE4Lkd4RFRBZGRIbk5RSDIiLCJpbWFnZVVybCI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyNC0xMi0xNlQxODo0Mzo1OC40NDJaIiwidXBkYXRlZEF0IjoiMjAyNC0xMi0xNlQxODo0Mzo1OC40NDJaIiwiaWF0IjoxNzM0Mzc0NjM4fQ.pivRuLOLgb0F6T8qCjbjqbJPAfu4FJRyzimX6eCifyM
+
+### Delete channel
+DELETE http://localhost:3000/admin/channel/d0941789-afcd-4dd3-903c-565bdd72ef9c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhODRiM2ZkMC0wMzc3LTQ3OTItYmRkNS1kZTAyZjc0OTI3NTQiLCJlbWFpbCI6ImJpa2lsYWtldGVtYTk0QGdtYWlsLmNvbSIsImltYWdlVXJsIjpudWxsLCJhY2NvdW50cyI6W10sInJvbGVzIjpbXSwiaWF0IjoxNzM0NDE3NzM2fQ.hiN-7Abb-KffKhDAFMD12ee6GxTQwF-G63imTZrncPw
+
+### Authenticate with Google
+GET http;//localhost:3000/auth/google/
+
+### Create a new user
+POST http://localhost:3000/auth/sign-up
+Content-Type: application/json
+
+{
+  "name": "testbikila",
+  "password": "bikila",
+  "email": "bikila94@bikila.com"
+}
+
+### Login
+
+POST http://localhost:3000/auth/sign-in
+Content-Type: application/json
+
+{
+  "password": "bikila",
+  "email": "bikila94@bikila.com"
+}
+
+### Create mentor
+POST http://localhost:3000/admin/mentors
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4M2UyODI0ZS04MjllLTRiZjctYmM3Yi0xNTg3MjI0YTRjZjEiLCJlbWFpbCI6ImJpa2lsYWtldGVtYTk0QGdtYWlsLmNvbSIsImltYWdlVXJsIjpudWxsLCJhY2NvdW50cyI6W3siaWQiOiJkZWJkNDFlMC05NGIzLTQwMWYtOTcxNi0zOWEyNDVmNDA0YTUiLCJuYW1lIjoiQmlraWxhIn1dLCJyb2xlcyI6WyJPV05FUiJdLCJpYXQiOjE3MzQ5MzQwOTMsImV4cCI6MTczNDkzNzY5M30.3dKWp0e7-pw60MkUj8VgpgrKtCdsDxoTJgm50s63iAg
+
+{
+    "accountId": "debd41e0-94b3-401f-9716-39a245f404a5",
+    "name": "Bikila",
+    "email": "bikila@gmail.com"
+}
+
+### Get all mentors
+GET http://localhost:3000/admin/mentors/debd41e0-94b3-401f-9716-39a245f404a5/all
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4M2UyODI0ZS04MjllLTRiZjctYmM3Yi0xNTg3MjI0YTRjZjEiLCJlbWFpbCI6ImJpa2lsYWtldGVtYTk0QGdtYWlsLmNvbSIsImltYWdlVXJsIjpudWxsLCJhY2NvdW50cyI6W3siaWQiOiJkZWJkNDFlMC05NGIzLTQwMWYtOTcxNi0zOWEyNDVmNDA0YTUiLCJuYW1lIjoiQmlraWxhIn1dLCJyb2xlcyI6WyJPV05FUiJdLCJpYXQiOjE3MzQ5Mzg3MjcsImV4cCI6MTczNDk0MjMyN30._8vbL-UgkJ45sSsqUZDnkXKvk729Cgf5wfiSILC9OhI
